@@ -11,3 +11,10 @@
 {{else}}
 <button class="btn" type="submit" {{action 'showArticles'}}>Gettin it</button>
 {{/if}}
+
+
+<img class="whatever" {{bind-attr src=startPicture}}>
+<button class="btn" type="submit" {{action 'thisArticle'}}><span class="glyphicon glyphicon-arrow-right"></span>Cycle Article</button>
+
+
+{{outlet}}
