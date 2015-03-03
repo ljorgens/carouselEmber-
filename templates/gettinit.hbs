@@ -1,20 +1,10 @@
 <h1>Gettin It</h1>
 
-{{#if articlesShowing}}
-<button class="btn" type="submit" {{action 'hideArticles'}}>Got it</button>
-<ul>
-  <li><a href="http://citybeat.com/cincinnati/article-29301-joseph_gatti_and_adiarys_almeida_return_for_the_nutcracker.html">Dances that go viral</a></li>
-  <li><a href="http://citybeat.com/cincinnati/article-28957-dance_of_the_dead.html">Songs and the Dances inspired by them</a></li>
-  <li><a href="http://articles.chicagotribune.com/keyword/modern-dance">Indigenous dances</a></li>
-  <li><a href="http://socialdance.stanford.edu/syllabi/smarter.htm">What the kids are dancing to these days</a></li>
-</ul>
-{{else}}
-<button class="btn" type="submit" {{action 'showArticles'}}>Gettin it</button>
-{{/if}}
-
-
+<button class="btn" type="submit" {{action 'previousArticle'}}><span class="glyphicon glyphicon-arrow-left"></span></button>
+<button class="btn" type="submit" {{action 'nextArticle'}}><span class="glyphicon glyphicon-arrow-right"></span></button>
+<br>
+<br>
 <img class="whatever" {{bind-attr src=startPicture}}>
-<button class="btn" type="submit" {{action 'thisArticle'}}><span class="glyphicon glyphicon-arrow-right"></span>Cycle Article</button>
 
 
 {{outlet}}

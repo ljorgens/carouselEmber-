@@ -4,4 +4,5 @@ Bustle.Router.map(function(){
     this.resource('article2');
   });
   this.resource('dancecentral');
+  this.resource('morecentral');
 });
